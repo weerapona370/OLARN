@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>Veggi One Page Restorent Template</title>
+	<title>OLARN One Page Restorent Template</title>
 	<link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" />
@@ -44,7 +44,7 @@
 						  
 						  <ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="/index">HOME</a></li>
-							<li><a href="/index02">SERVICES</a></li>
+							<li><a href="/index02">COMMENTS</a></li>
 	
 							
 						  </ul>
@@ -73,16 +73,16 @@
                     <div class="parallax-content baner-content" id="home">
                         <div class="container">
                             <div class="text-content">
-                                <h2 style="color:green"><em>Our</em> <span style="color:green">Drink and Food</span> <span style="color:yellowgreen">is the Best</span></h2>
+                                <h2 style="color:green"><em>Our</em> <span style="color:green">Suggestions</span> <span style="color:yellowgreen">is the Best</span></h2>
                                 <br><br>
                                     <div>
                                     <section class="filled">
                                         <form action="index02" method="POST" enctype="multipart/form-data;charset=UTF-8">
                                         {% csrf_token %}
                                         
-                                        <div class="text-content" style="color: rgb(145, 136, 136);"><span style="color:#000">name ชื่อ</span><br><input class="filled" type="text" name="icon" value=""/></div>
-                                        <div class="spacing"  style="color: #000;"><span style="color:#000">Cal แคลอรี่</span><br><input class="filled" type="text" name="title" value=""/></div>
-                                        <div class="spacing"   style="color: #000;"><span style="color:#000">detail รายละเอียด</span><br><input class="filled" type="text" name="detail" value=""/></div><br>
+                                        <div class="text-content" style="color: rgb(145, 136, 136);"><span style="color:#000">name(ชื่อ)</span><br><input class="filled" type="text" name="icon" value=""/></div>
+                                        <div class="spacing"  style="color: #000;"><span style="color:#000">Where are you from(คุณมาจากไหน)</span><br><input class="filled" type="text" name="title" value=""/></div>
+                                        <div class="spacing"   style="color: #000;"><span style="color:#000">detail(รายละเอียด)</span><br><input class="filled" type="text" name="detail" value=""/></div><br>
                                         <div class="primary-white-button"><button  type="submit">Submit</button></div>
                                         <!-- <div class="primary-white-button">
                                                 <a href="#" class="scroll-link" data-id="about">Let's Start</a>
@@ -93,8 +93,8 @@
                                         <div>
                                                 <table style="width:100%; border: 1px solid white; padding: 1em; background: #fff;">
                                                  <tr>
-                                                   <th>Icon</th>
-                                                   <th>Title</th>
+                                                   <th>Name</th>
+                                                   <th>From</th>
                                                    <th>Detail</th>
                                                  </tr>
                                                  {% for s in services %}
